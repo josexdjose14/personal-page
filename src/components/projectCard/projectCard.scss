@@ -1,0 +1,67 @@
+@import '../../assets/styles/variables.scss';
+
+.portfolioProjectCard {
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+
+    background-color: $light-azure-blue;
+    border: 2px solid $light-azure-blue;
+    border-radius: 20px;
+
+    &__frontcard {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+    }
+
+    &__backcard {
+        visibility: none;
+        display: none;
+    }
+
+    &:hover &__backcard {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        padding: 10px 30px;
+
+        background-color: $light-azure-blue;
+        border-radius: inherit;
+        color: black;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        figure {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            cursor: pointer;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}

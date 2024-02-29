@@ -1,0 +1,64 @@
+@import '../../assets/styles/variables.scss';
+
+.portfolioHome {
+    //position-shape
+    width: 100%;
+    height: 100vh;
+
+    //flexbox
+    display: flex;
+    flex-direction: row;
+
+    //cosmetics
+    background-image: url('/images/post-2.png');
+
+
+    article {
+        width: 50%;
+        height: 100%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 100px;
+        gap: 10px;
+
+        &__text1 {
+            padding: 5px;
+            border: solid 1px $azure-blue;
+            background-color: $azure-blue;
+            border-radius: 10px 10px 10px 0px;
+            box-shadow: $box-shadow-square;
+        }
+
+        &__text2 {
+            font-size: 36px;
+            color: $orange;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 50%;
+            height: 50%;
+
+            img {
+                border: $azure-blue solid 10px;
+                width: 100%;
+                border-radius: 100%;
+                box-shadow: $box-shadow-square;
+            }
+        }
+    }
+}
