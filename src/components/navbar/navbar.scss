@@ -32,4 +32,12 @@
             }
         }
     }
+
+    @include tablet {
+        //background-color: blue;
+    }
+
+    @include mobile {
+        //background-color: red;
+    }
 }
