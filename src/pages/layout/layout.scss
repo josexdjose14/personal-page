@@ -1,0 +1,9 @@
+@import '../../assets/styles/reset.scss';
+@import '../../assets/styles/variables.scss';
+
+.portfolioLayout {
+    font-family: $font-poppins-core;
+    background-color: $light-azure-blue;
+
+    width: 100vw;
+}

@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables.scss';
+
+.portfolioProjects {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    background-image: url('/images/post-3.png');
+
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    @include tablet {
+        height: auto;
+    }
+}
