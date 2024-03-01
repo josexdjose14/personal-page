@@ -18,5 +18,10 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    @include tablet {
+        height: auto;
     }
 }

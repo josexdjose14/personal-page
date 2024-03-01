@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './projectCard.scss'
 
 const ProjectCard = ({ project }) => {
+    const [showBox, setShowBox] = useState(false)
+    const [extraClass, setExtraClass] = useState('');
+
     const goToGitHub = () => {
         window.open(project.github, '_blank');
     }
     const goToDeploy = () => {
         window.open(project.deploy, '_blank');
     }
+    const toShow = () => {
+        setShowBox(!showBox);
+
+        if (!showBox) {
+            setExtraClass("showBox");
+        } else {
+            setExtraClass("");
+        }
+    }
 
     return (
-        <article className='portfolioProjectCard'>
+        <article className='portfolioProjectCard' onClick={toShow}>
             <figure className='portfolioProjectCard__frontcard'>
                 <img src={project.image} alt="project-image" />
             </figure>
-            <aside className='portfolioProjectCard__backcard'>
+            <aside className={`portfolioProjectCard__backcard ${extraClass}`}>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <figure>

@@ -16,6 +16,10 @@
 
   background-color: $dark-azure-blue;
 
+  @include tablet {
+    padding: 0px 20px;
+  }
+
   h3 {
     width: 100%;
     text-align: center;
@@ -49,6 +53,11 @@
     div {
       // border: red solid 1px;
     }
+
+    @include tablet {
+      min-width: 300px;
+      font-size: 14px;
+    }
   }
 
   &__link {
@@ -71,6 +80,11 @@
     img {
       height: 100%;
       cursor: pointer;
+    }
+
+    @include tablet {
+      min-width: 300px;
+      font-size: 14px;
     }
   }
 }
