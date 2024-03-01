@@ -6,14 +6,14 @@ const About = () => {
     <section className='portfolioAbout' id='about'>
       <article className='portfolioAbout__tech'>
         <figure>
-          <img src="/images/html.png" alt="tech-icon" />
-          <img src="/images/js.png" alt="tech-icon" />
-          <img src="/images/css.png" alt="tech-icon" />
-          <img src="/images/sass.png" alt="tech-icon" />
-          <img src="/images/redux.png" alt="tech-icon" />
-          <img src="/images/react.png" alt="tech-icon" />
-          <img src="/images/git.png" alt="tech-icon" />
-          <img src="/images/firebaseIcon.png" alt="tech-icon" />
+          <img src="images/html.png" alt="tech-icon" />
+          <img src="images/js.png" alt="tech-icon" />
+          <img src="images/css.png" alt="tech-icon" />
+          <img src="images/sass.png" alt="tech-icon" />
+          <img src="images/redux.png" alt="tech-icon" />
+          <img src="images/react.png" alt="tech-icon" />
+          <img src="images/git.png" alt="tech-icon" />
+          <img src="images/firebaseIcon.png" alt="tech-icon" />
         </figure>
       </article>
       <article className='portfolioAbout__aboutme'>

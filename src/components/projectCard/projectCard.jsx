@@ -18,8 +18,8 @@ const ProjectCard = ({ project }) => {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <figure>
-                    <img src="/images/githubIcon.svg" alt="GitHub-icon" onClick={goToGitHub} />
-                    <img src="/images/deployIcon.svg" alt="Deploy-icon" onClick={goToDeploy} />
+                    <img src="images/githubIcon.svg" alt="GitHub-icon" onClick={goToGitHub} />
+                    <img src="images/deployIcon.svg" alt="Deploy-icon" onClick={goToDeploy} />
                 </figure>
             </aside>
 

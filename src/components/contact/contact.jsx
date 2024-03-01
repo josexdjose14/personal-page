@@ -2,12 +2,20 @@ import React from 'react'
 import './contact.scss'
 
 const Contact = () => {
+
+  const goToGitHub = () => {
+    window.open('https://github.com/josexdjose14', '_blank');
+  }
+  const goToLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/josexdjose14/', '_blank');
+  }
+
   return (
     <section id='contact' className='portfolioContact'>
       <h3>Contact me</h3>
       <article className='portfolioContact__card'>
         <figure>
-          <img src="/images/adressIcon.svg" alt="" />
+          <img src="images/adressIcon.svg" alt="" />
         </figure>
         <div>
           <p>Adress</p>
@@ -16,7 +24,7 @@ const Contact = () => {
       </article>
       <article className='portfolioContact__card'>
         <figure>
-          <img src="/images/emailIcon.svg" alt="" />
+          <img src="images/emailIcon.svg" alt="" />
         </figure>
         <div>
           <p>Email</p>
@@ -25,7 +33,7 @@ const Contact = () => {
       </article>
       <article className='portfolioContact__card'>
         <figure>
-          <img src="/images/phoneIcon.svg" alt="" />
+          <img src="images/phoneIcon.svg" alt="" />
         </figure>
         <div>
           <p>Phone</p>
@@ -33,8 +41,8 @@ const Contact = () => {
         </div>
       </article>
       <figure className='portfolioContact__link'>
-        <img src="/images/linkedinIcon.svg" alt="linkedin-link" />
-        <img src="/images/githubIcon.svg" alt="github-link" />
+        <img src="images/linkedinIcon.svg" alt="linkedin-link" onClick={goToLinkedIn} />
+        <img src="images/githubIcon.svg" alt="github-link" onClick={goToGitHub} />
       </figure>
     </section>
   )

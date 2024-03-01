@@ -11,7 +11,7 @@ const Home = () => {
             </article>
             <article className='portfolioHome__image'>
                 <figure>
-                    <img src="/images/profile_image_01.jpeg" alt="profile image" />
+                    <img src="images/profile_image_01.jpeg" alt="profile image" />
                 </figure>
             </article>
         </section>
