@@ -33,4 +33,12 @@ export const projectList: ProjectData[] = [
         github: "https://github.com/josexdjose14/bia-test",
         deploy: "https://bia-test.vercel.app/"
     },
+    {
+        id: 9,
+        image: "images/project_09.png",
+        name: "MatchasH",
+        description: "The last professional project I worked on was a social network focused on social gatherings and sports. I was in charge of creating the entire frontend using TypeScript, Ionic, and React.",
+        github: "https://matchash.com/web",
+        deploy: "https://play.google.com/store/apps/details?id=com.matchash.app"
+    },
 ]

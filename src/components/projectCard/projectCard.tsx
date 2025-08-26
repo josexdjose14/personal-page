@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         // </article>
 
         <article
-            className="w-[300px] aspect-3/2 md:w-[500px] as relative group cursor-pointer overflow-hidden rounded-md"
+            className="w-[300px] aspect-3/2 md:w-[400px] lg:w-[500px] as relative group cursor-pointer overflow-hidden rounded-md"
             onClick={() => setShowBox(!showBox)}
         >
             {/* Frontcard */}
@@ -62,14 +62,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <aside className={`absolute inset-0 w-full h-full bg-white p-4 flex flex-col justify-center items-center md:justify-evenly
                      transition-opacity duration-300 ${showBox ? 'opacity-100' : 'opacity-0'} group-hover:opacity-100`}>
                 <h3 className='font-semibold'>{project.name}</h3>
-                <p className='text-sm md:text-base'>{project.description}</p>
+                <p className='text-sm max-h-4/5 overflow-y-scroll md:text-base md:max-h-full md:overflow-y-hidden'>{project.description}</p>
                 <div className="flex gap-4 mt-2">
                     <img src="images/githubIcon.svg" alt="GitHub-icon" onClick={() => window.open(project.github, "_blank")} className="w-6 h-6" />
                     <img src="images/deployIcon.svg" alt="Deploy-icon" onClick={() => window.open(project.deploy, "_blank")} className="w-6 h-6" />
                 </div>
             </aside>
         </article>
-
     )
 }
 
